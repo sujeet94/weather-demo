@@ -3,11 +3,11 @@
  Project Deployed on Firebase.
  Demo Link [weather](https://weather-demo-190f0.web.app) .
 
-# Api Used
+## Api Used
 For City List static List with around 50-60 indian cities.
 For City Forecast https://api.openweathermap.org/data/2.5/forecast
 
-# Current Implementation Details
+## Current Implementation Details
 * Displayed a list of static city data taken from openweatermap.org.
 * Added a button to see the forecast of selected city.
 * Added a search bar to find your City.
@@ -16,7 +16,7 @@ For City Forecast https://api.openweathermap.org/data/2.5/forecast
 * added a search filter to search in table.
 * Displayed data which I felt is Important to User.
 
-# Improvements That could be done
+## Improvements That could be done
 * Should not hardcode the City list on UI, In Ideal scenerio the First page should be a searchable dropdown with top 10 most selected City populated and on User entering the City name It should do an Api call to get the city details from our server.
 * Second page where we are showing the forecaste should be paginated.
 * It should be API base pagination, filtering and sorting.
