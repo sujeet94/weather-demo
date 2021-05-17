@@ -1,3 +1,12 @@
+# DeMo Link
+
+This project Demo Link [https://weather-demo-190f0.web.app](https://weather-demo-190f0.web.app) .
+
+# Api Used
+For City List static List with around 50-60 indian cities.
+For City Forecast https://api.openweathermap.org/data/2.5/forecast
+
+
 # WeatherDemo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
