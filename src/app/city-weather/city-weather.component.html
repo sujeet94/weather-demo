@@ -2,12 +2,12 @@
     {{cityData?.name}} - {{cityData?.country}} ( Coordinates : {{cityData?.coord.lat}} - {{cityData?.coord.lon}} )
 </div>
 
-
+<div *ngIf="cityData">
 <mat-form-field>
     <mat-label>Filter </mat-label>
     <input matInput (keyup)="applyFilter($event)" placeholder="Search Within the table" #input [autocomplete]="'off'">
   </mat-form-field>
-  <div>
+  <div class="list-view">
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
     
     <ng-container matColumnDef="date">
@@ -48,4 +48,8 @@
       <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
     </tr>
   </table>
+</div>
+</div>
+<div *ngIf="errorObj">
+  {{errorObj.message}}
 </div>

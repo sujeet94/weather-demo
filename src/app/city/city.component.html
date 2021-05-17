@@ -1,5 +1,5 @@
 <div class="sub-header">
-    Select City
+   <h2>Select City</h2> 
 </div>
 <div>
     <mat-form-field class="form-field">
@@ -12,7 +12,7 @@
       <button  mat-raised-button color="primary" class="action-button" (click)="getWeaterDetails()">Get Weather Details</button>
 
 </div>
-<div *ngIf="filteredCityList">
+<div *ngIf="filteredCityList" class="list-view">
 
 <mat-selection-list [multiple]="false" *ngIf="filteredCityList.length>0; else noCity" [(ngModel)]="selectedCity">
     <mat-list-option *ngFor="let city of filteredCityList"  [value]="city.id">

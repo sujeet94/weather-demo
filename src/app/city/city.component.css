@@ -2,8 +2,12 @@
     width: 500px;
 }
 .sub-header{
-    padding: 20px 0;
+    padding-bottom: 20px;
 }
 .action-button{
     margin-left: 2rem;
+}
+.list-view{
+    overflow-y: scroll;
+    height: 60vh;
 }

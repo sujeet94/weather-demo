@@ -6,7 +6,8 @@ import { CityComponent } from './city/city.component';
 const routes: Routes = [
   {path : "", component:CityComponent},
   {path : "city", component:CityComponent},
-  {path:"weather/:id",component:CityWeatherComponent}
+  {path: "weather",redirectTo:"city"},
+  {path: "weather/:id",component:CityWeatherComponent}
 
 ];
 
